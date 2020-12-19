@@ -1,0 +1,11 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas.tatzan.com
+functions:
+  astronaut-finder:
+    lang: python3
+    handler: ./astronaut-finder
+    image: kfirfer/astronaut-finder:latest
+    environment:
+      write_debug: true

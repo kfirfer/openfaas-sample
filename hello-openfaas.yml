@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas.tatzan.com/
+functions:
+  hello-openfaas:
+    lang: python3
+    handler: ./hello-openfaas
+    image: kfirfer/hello-openfaas:latest
+
